@@ -36,12 +36,6 @@ Optional download verification, from the repository root:
 sha256sum bonus3_code/checkpoints/gpt_best.pt bonus3_code/checkpoints/gpt_latest.pt
 ```
 
-Expected SHA-256 values:
-
-```text
-80a21e79c6e03fbd8e82aac5e8e9e75476697f6d072f4535bd0e68a55601cb9e  bonus3_code/checkpoints/gpt_best.pt
-dc1221c6a8c5df8e268591c7639a99d18650fce25fa00214213a1cdf88fcf4c9  bonus3_code/checkpoints/gpt_latest.pt
-```
 
 ## Repository structure
 
@@ -88,7 +82,7 @@ The directory-level READMEs provide further implementation details: [Question 2]
 
 ## Environment and installation
 
-The original experiments used Python 3.11, PyTorch `2.11.0+cu128`, torchvision `0.26.0+cu128`, NumPy `1.26.4`, and Matplotlib `3.10.0`, on one NVIDIA A100 80GB PCIe GPU. Question 2 and the bigram use float32; the recorded GPT run uses BF16 autocast with float32 parameters and zero scaler-skipped updates.
+**The original experiments used Python 3.11, PyTorch `2.11.0+cu128`, torchvision `0.26.0+cu128`, NumPy `1.26.4`, and Matplotlib `3.10.0`, on one NVIDIA A100 80GB PCIe GPU. Question 2 and the bigram use float32; the recorded GPT run uses BF16 autocast with float32 parameters and zero scaler-skipped updates.**
 
 The launchers require Linux, Bash, and `flock` from `util-linux`. GPU experiment scripts require CUDA and expose exactly one GPU. CPU-only machines can inspect the saved results and run CPU checks that do not require GPU inference.
 
@@ -108,7 +102,7 @@ Install matching CUDA-enabled PyTorch and torchvision builds using the [official
 python -m pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
 ```
 
-Check GPU availability and choose an available GPU UUID:
+### Check GPU availability and choose an available GPU UUID:
 
 ```bash
 python -c 'import torch; print(torch.__version__); print("CUDA available:", torch.cuda.is_available())'
