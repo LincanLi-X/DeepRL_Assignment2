@@ -1,0 +1,13 @@
+{
+  "all_checks_passed": true,
+  "seed_and_fixed_targets_replayed": true,
+  "all_inputs_match_original_cropped_tokens": true,
+  "retained_position_ids_verified": true,
+  "only_last_target_scored": true,
+  "independent_cpu_ce_absolute_errors": {
+    "32": 9.004839540693865e-09,
+    "128": 8.737767842603716e-09,
+    "256": 3.4800109460775275e-09
+  },
+  "all_frozen_artifacts_unchanged": true
+}

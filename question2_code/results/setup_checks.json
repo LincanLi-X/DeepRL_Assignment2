@@ -1,0 +1,175 @@
+{
+  "torch_version": "2.11.0+cu128",
+  "check_device": "cpu",
+  "initialization_seed_per_model": 1337,
+  "pretraining_prediction": "I expect the MLP to be more sensitive to position changes than the CNN because its first layer assigns separate weights to each pixel coordinate, so shifting an object changes which weights process it. The CNN reuses local filters across positions, and pooling plus global average pooling should make its predictions more stable under small translations. I do not expect exact translation invariance, since strided pooling and boundary effects can still change the CNN's output.",
+  "input_checks": {
+    "train": {
+      "dataset_image_shape": [
+        10000,
+        1,
+        36,
+        36
+      ],
+      "checked_batch_shape": [
+        4,
+        1,
+        36,
+        36
+      ],
+      "image_dtype": "torch.float32",
+      "pixel_range": [
+        0.0,
+        1.0
+      ],
+      "label_shape": [
+        4
+      ],
+      "label_dtype": "torch.int64",
+      "label_range": [
+        0,
+        9
+      ],
+      "maximum_center_scaling_error": 0.0,
+      "maximum_absolute_border_pixel": 0.0
+    },
+    "validation": {
+      "dataset_image_shape": [
+        2000,
+        1,
+        36,
+        36
+      ],
+      "checked_batch_shape": [
+        4,
+        1,
+        36,
+        36
+      ],
+      "image_dtype": "torch.float32",
+      "pixel_range": [
+        0.0,
+        1.0
+      ],
+      "label_shape": [
+        4
+      ],
+      "label_dtype": "torch.int64",
+      "label_range": [
+        0,
+        9
+      ],
+      "maximum_center_scaling_error": 0.0,
+      "maximum_absolute_border_pixel": 0.0
+    },
+    "test": {
+      "dataset_image_shape": [
+        2000,
+        1,
+        36,
+        36
+      ],
+      "checked_batch_shape": [
+        4,
+        1,
+        36,
+        36
+      ],
+      "image_dtype": "torch.float32",
+      "pixel_range": [
+        0.0,
+        1.0
+      ],
+      "label_shape": [
+        4
+      ],
+      "label_dtype": "torch.int64",
+      "label_range": [
+        0,
+        9
+      ],
+      "maximum_center_scaling_error": 0.0,
+      "maximum_absolute_border_pixel": 0.0
+    }
+  },
+  "models": {
+    "MLP": {
+      "dummy_logit_shape": [
+        4,
+        10
+      ],
+      "real_batch_logit_shape": [
+        4,
+        10
+      ],
+      "logit_dtype": "torch.float32",
+      "finite_logits": true,
+      "output_layer": "Linear",
+      "trainable_parameters": 94114,
+      "layer_parameters": [
+        {
+          "layer": "layers.1",
+          "type": "Linear",
+          "weights": 93312,
+          "biases": 72,
+          "total": 93384
+        },
+        {
+          "layer": "layers.3",
+          "type": "Linear",
+          "weights": 720,
+          "biases": 10,
+          "total": 730
+        }
+      ],
+      "architecture": "MLP(\n  (layers): Sequential(\n    (0): Flatten(start_dim=1, end_dim=-1)\n    (1): Linear(in_features=1296, out_features=72, bias=True)\n    (2): ReLU()\n    (3): Linear(in_features=72, out_features=10, bias=True)\n  )\n)",
+      "initialization_reproducible": true
+    },
+    "CNN": {
+      "dummy_logit_shape": [
+        4,
+        10
+      ],
+      "real_batch_logit_shape": [
+        4,
+        10
+      ],
+      "logit_dtype": "torch.float32",
+      "finite_logits": true,
+      "output_layer": "Linear",
+      "trainable_parameters": 93962,
+      "layer_parameters": [
+        {
+          "layer": "layers.0",
+          "type": "Conv2d",
+          "weights": 288,
+          "biases": 32,
+          "total": 320
+        },
+        {
+          "layer": "layers.3",
+          "type": "Conv2d",
+          "weights": 18432,
+          "biases": 64,
+          "total": 18496
+        },
+        {
+          "layer": "layers.6",
+          "type": "Conv2d",
+          "weights": 73728,
+          "biases": 128,
+          "total": 73856
+        },
+        {
+          "layer": "layers.10",
+          "type": "Linear",
+          "weights": 1280,
+          "biases": 10,
+          "total": 1290
+        }
+      ],
+      "architecture": "CNN(\n  (layers): Sequential(\n    (0): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n    (1): ReLU()\n    (2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n    (3): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n    (4): ReLU()\n    (5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)\n    (6): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))\n    (7): ReLU()\n    (8): AdaptiveAvgPool2d(output_size=1)\n    (9): Flatten(start_dim=1, end_dim=-1)\n    (10): Linear(in_features=128, out_features=10, bias=True)\n  )\n)",
+      "initialization_reproducible": true
+    }
+  }
+}

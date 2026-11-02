@@ -1,0 +1,30 @@
+{
+  "all_checks_passed": true,
+  "check_device": "NVIDIA A100 80GB PCIe",
+  "check_precision": "float32; no autocast; TF32 disabled",
+  "short_logit_shape": [
+    2,
+    17,
+    65
+  ],
+  "long_logit_shape": [
+    2,
+    256,
+    65
+  ],
+  "explicit_retained_position_shape": [
+    2,
+    32,
+    65
+  ],
+  "parameters": 10745088,
+  "maximum_attention_row_sum_error": 2.384185791015625e-07,
+  "maximum_future_attention_weight": 0.0,
+  "prefix_logit_delta": 0.0,
+  "weight_tensor_shared": true,
+  "initialization_reproducible": true,
+  "initial_parameter_sha256": "74a189a1b4258371e17155133d53e3b510a5c1816ecb1d9154f28f6f2e4f0369",
+  "model_restored_to_training_mode": true,
+  "earlier_report_sha256": "b955a64788c946e353f210df9a73c88f655fe9eae3fd644f52052ee874ec2cff",
+  "bigram_final_sha256": "95b6cbe22fb359a461f7282baf09fa3e1e8e9c20bb5055550a722cf5886d668e"
+}

@@ -1,0 +1,146 @@
+{
+  "selected_update": 1750,
+  "selected_checkpoint_sha256": "80a21e79c6e03fbd8e82aac5e8e9e75476697f6d072f4535bd0e68a55601cb9e",
+  "prompt": "ROMEO:\n",
+  "records": [
+    {
+      "temperature": 0.7,
+      "seed": 1,
+      "new_characters": 128,
+      "unique_fourgrams": 120,
+      "fourgram_windows": 125,
+      "R4": 0.040000000000000036,
+      "continuation": "What said me the contract?\n\nFRIAR LAURENCE:\nThat a virtue cannot be threwith the hand,\nI have not done, to find thy death, nor b",
+      "file": "results/temperature_samples/temperature_0p7_seed1.txt",
+      "file_sha256": "c50f80cedf1da288b6ef1c996aa00108bd6d86a30cca0f0505a9cb1436d22c9c"
+    },
+    {
+      "temperature": 0.7,
+      "seed": 2,
+      "new_characters": 128,
+      "unique_fourgrams": 115,
+      "fourgram_windows": 125,
+      "R4": 0.07999999999999996,
+      "continuation": "O my true, my lord! hath standed not still been with me?\nBethink you he closed the crown are bench with me;\nIf e'er then you can",
+      "file": "results/temperature_samples/temperature_0p7_seed2.txt",
+      "file_sha256": "3c37ecfc70761b21cbc205cde83235c6c2e409c0560f6735868f8d8c1a335343"
+    },
+    {
+      "temperature": 0.7,
+      "seed": 3,
+      "new_characters": 128,
+      "unique_fourgrams": 116,
+      "fourgram_windows": 125,
+      "R4": 0.07199999999999995,
+      "continuation": "Then it is the measure of the prince,\nAnd making this form in his treacherous deed.\n\nCAMILLO:\nYou shall desire the passage of my",
+      "file": "results/temperature_samples/temperature_0p7_seed3.txt",
+      "file_sha256": "fd45d88a483bcdd4c14110b5ce2a8e09e15a56f400bf498f8358706e94f24e44"
+    },
+    {
+      "temperature": 1.0,
+      "seed": 1,
+      "new_characters": 128,
+      "unique_fourgrams": 105,
+      "fourgram_windows": 125,
+      "R4": 0.16000000000000003,
+      "continuation": "What sullen is much length the king?\n\nCATESBY:\nPray you, and call my leave.\n\nCATESBY:\nWas ever the mage, with tell me?\n\nCATESBY:",
+      "file": "results/temperature_samples/temperature_1p0_seed1.txt",
+      "file_sha256": "6ebeffe357f801ac4da46cdaf6f05a5c0344ea4b5871e947f711e76294363d13"
+    },
+    {
+      "temperature": 1.0,
+      "seed": 2,
+      "new_characters": 128,
+      "unique_fourgrams": 116,
+      "fourgram_windows": 125,
+      "R4": 0.07199999999999995,
+      "continuation": "O my tale, my heart, at the need-night is not glorious.\nWhen, ho! what, cloud! what boy! art thou a cocked evil,\nAnd thou set th",
+      "file": "results/temperature_samples/temperature_1p0_seed2.txt",
+      "file_sha256": "db7287b0847a6c058aa5c1c6ed0ca2b9f03e4fd47a2432fe19da5fdec56db1d3"
+    },
+    {
+      "temperature": 1.0,
+      "seed": 3,
+      "new_characters": 128,
+      "unique_fourgrams": 121,
+      "fourgram_windows": 125,
+      "R4": 0.03200000000000003,
+      "continuation": "Then it be loathed as beaten from Rivers:\nBesides, if it be made it, look to thee.\nStirs; for thou hast determined on me;\nAnd te",
+      "file": "results/temperature_samples/temperature_1p0_seed3.txt",
+      "file_sha256": "dcfddc8d91a8bf23c648f8f94a13d22469cca89ce012119319b4a7a65d81eb14"
+    },
+    {
+      "temperature": 1.3,
+      "seed": 1,
+      "new_characters": 128,
+      "unique_fourgrams": 123,
+      "fourgram_windows": 125,
+      "R4": 0.016000000000000014,
+      "continuation": "What; the repent usurp'd?\nItmen, you can make a sacraft faction.\nOminion!\nI came off!\nWas ever-foot, gratisfy,\nToo rung, the nob",
+      "file": "results/temperature_samples/temperature_1p3_seed1.txt",
+      "file_sha256": "29e50632dca737b6a06f18c7b644646341cb2d25a01f8c546bcfbbf0931c095d"
+    },
+    {
+      "temperature": 1.3,
+      "seed": 2,
+      "new_characters": 128,
+      "unique_fourgrams": 124,
+      "fourgram_windows": 125,
+      "R4": 0.008000000000000007,
+      "continuation": "O my tale, methink! Whither mayorN, by my wretch.\nWhich is the bid me send by, thus boy! art thou a cockel'd,\nI 'tis for jest li",
+      "file": "results/temperature_samples/temperature_1p3_seed2.txt",
+      "file_sha256": "63517c248961fb73d21c7bc17110abd2e1310fb915988b60b5706f09bb18c57e"
+    },
+    {
+      "temperature": 1.3,
+      "seed": 3,
+      "new_characters": 128,
+      "unique_fourgrams": 124,
+      "fourgram_windows": 125,
+      "R4": 0.008000000000000007,
+      "continuation": "Then it be loathed as beaten from River,\nThe fearful sin bolks, and hold old Warwick them\nHath integraging repnied out small cop",
+      "file": "results/temperature_samples/temperature_1p3_seed3.txt",
+      "file_sha256": "72dae161fc5e2fcbacdc1059674b198ac57a0d2dd099c85dd02907883232b075"
+    }
+  ],
+  "summary": [
+    {
+      "temperature": 0.7,
+      "mean_R4": 0.06399999999999999,
+      "seeds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "temperature": 1.0,
+      "mean_R4": 0.08800000000000001,
+      "seeds": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "temperature": 1.3,
+      "mean_R4": 0.010666666666666677,
+      "seeds": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "autocast_dtype": "torch.bfloat16",
+  "sampling_generator_device": "cpu",
+  "dropout_off": true,
+  "no_top_k_or_top_p": true,
+  "model_and_frozen_artifacts_unchanged": true,
+  "reference_tau1_full_validation_perplexity": 4.344307027015568,
+  "source_sha256": {
+    "temperature_experiment.py": "17879cbd8fa51dc5d87b9e5805c9774176e2bb4f0fac25bf12869c6f9091246e",
+    "language_eval.py": "4fa727a1304b28c87a43bb554f82819d9cb99268b5d30eb66ba6425233c835d3",
+    "part_c_common.py": "094e38ed39f2d30c1e36f56c884e3b6bd567ae4ba36a22137ba8ff55626ee2c0"
+  }
+}

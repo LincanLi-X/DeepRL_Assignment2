@@ -1,0 +1,11 @@
+model,condition,delta_row,delta_column,examples,correct,consistent_with_centered,prediction_changes,consistent_but_incorrect,accuracy,consistency
+MLP,centered,0,0,2000,1654,2000,0,346,0.827,1.0
+MLP,left,0,-3,2000,674,717,1283,127,0.337,0.3585
+MLP,right,0,3,2000,641,659,1341,65,0.3205,0.3295
+MLP,up,-3,0,2000,1111,1170,830,147,0.5555,0.585
+MLP,down,3,0,2000,1190,1244,756,129,0.595,0.622
+CNN,centered,0,0,2000,1450,2000,0,550,0.725,1.0
+CNN,left,0,-3,2000,1333,1599,401,353,0.6665,0.7995
+CNN,right,0,3,2000,1427,1702,298,372,0.7135,0.851
+CNN,up,-3,0,2000,1429,1843,157,459,0.7145,0.9215
+CNN,down,3,0,2000,1401,1715,285,392,0.7005,0.8575

@@ -1,0 +1,14 @@
+{
+  "all_checks_passed": true,
+  "training_iterations": 5000,
+  "training_windows": 320000,
+  "evaluation_points": 21,
+  "evaluation_windows": 537600,
+  "training_and_evaluation_rng_streams_replayed_exactly": true,
+  "learning_rate_schedule_verified": true,
+  "optimizer_grouping_verified": true,
+  "best_update": 1750,
+  "sampled_validation_ce": 1.467988815542776,
+  "checkpoint_states_and_tied_weights_verified": true,
+  "original_bigram_and_report_unchanged": true
+}

@@ -1,0 +1,4 @@
+context_length,first_position_id,last_position_id,targets,cross_entropy,fresh_forward_batches,explicit_positions_observed,loss_dtype
+32,224,255,512,1.6993778020918562,16,True,torch.float32
+128,128,255,512,1.5667997888156382,16,True,torch.float32
+256,0,255,512,1.457958561651802,16,True,torch.float32

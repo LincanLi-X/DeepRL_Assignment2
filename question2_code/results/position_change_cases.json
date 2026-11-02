@@ -1,0 +1,37 @@
+{
+  "selection_rule": "One example per model: scan shifts left, right, up, down, and select the first changed prediction in saved test order. No selection by correctness or class.",
+  "number_of_pairs": 2,
+  "cases": [
+    {
+      "model": "MLP",
+      "condition": "left",
+      "delta_row": 0,
+      "delta_column": -3,
+      "test_position": 0,
+      "official_test_index": 4060,
+      "true_class_id": 0,
+      "true_class_name": "T-shirt/top",
+      "centered_prediction_id": 0,
+      "centered_prediction_name": "T-shirt/top",
+      "shifted_prediction_id": 6,
+      "shifted_prediction_name": "Shirt"
+    },
+    {
+      "model": "CNN",
+      "condition": "left",
+      "delta_row": 0,
+      "delta_column": -3,
+      "test_position": 9,
+      "official_test_index": 6094,
+      "true_class_id": 0,
+      "true_class_name": "T-shirt/top",
+      "centered_prediction_id": 6,
+      "centered_prediction_name": "Shirt",
+      "shifted_prediction_id": 0,
+      "shifted_prediction_name": "T-shirt/top"
+    }
+  ],
+  "models_without_prediction_changes": [],
+  "figure": "results/figures/q2c_prediction_changes.png",
+  "figure_sha256": "9dad508ac81169764f5848a0e091e503bc7e9c0ce95a407e3b9be70ff843d6b1"
+}

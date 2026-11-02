@@ -1,0 +1,18 @@
+{
+  "train_characters": 1003854,
+  "validation_characters": 111540,
+  "train_global_slice": [
+    0,
+    1003854
+  ],
+  "validation_global_slice": [
+    1003854,
+    1115394
+  ],
+  "slice_right_end_exclusive": true,
+  "sequence_order_preserved": true,
+  "one_shared_vocabulary": true,
+  "separate_test_set": false,
+  "split_file_sha256": "111b153ac2ca0a667e1b12c7f5fa2d76c827bd64f22e9e2d91facb7b1599a965",
+  "vocabulary_sha256": "f3b19e2c97e7d2e29fe7cc2abbc37709bd5dc1bf557d1add8fc4ba5a1338836b"
+}

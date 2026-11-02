@@ -1,0 +1,47 @@
+{
+  "parameters": 4225,
+  "completed_updates": 500,
+  "validation": {
+    "cross_entropy": 2.521165241190349,
+    "perplexity": 12.443087417320134,
+    "total_negative_log_likelihood": 281208.2498371303,
+    "targets": 111539,
+    "full_chunks": 435,
+    "last_chunk_length": 179,
+    "chunk_count": 436,
+    "all_targets_scored_once": true
+  },
+  "generation": {
+    "prompt": "ROMEO:\n",
+    "temperature": 1.0,
+    "seed": 1337,
+    "generator_device": "cpu",
+    "new_characters": 128,
+    "continuation": "Cprs an tcede.\nYEin,Y roloundee we anonszzate t,-bee wist ic wsoster; bea yonsenimser se ay g pouraE:\ny mou ber s Lcorl teXBus t"
+  },
+  "learned_transition_example": {
+    "current_character": "q",
+    "next_character": "u",
+    "probability": 0.8295245170593262,
+    "most_likely_next_character": "u"
+  },
+  "checkpoint_unchanged": true,
+  "final_checkpoint_sha256": "95b6cbe22fb359a461f7282baf09fa3e1e8e9c20bb5055550a722cf5886d668e",
+  "environment": {
+    "gpu_name": "NVIDIA A100 80GB PCIe",
+    "visible_device_count": 1,
+    "cuda_visible_devices": "GPU-8b270cf8-6bb4-cee0-7060-88eba83d2fb0",
+    "torch_version": "2.11.0+cu128",
+    "cuda_runtime": "12.8",
+    "precision": "float32",
+    "autocast": false,
+    "tf32": false,
+    "deterministic_algorithms": true,
+    "allocation": "one idle server GPU selected by UUID; no job scheduler discovered",
+    "deviation": "server GPU instead of the prescribed free Google Colab GPU"
+  },
+  "evaluation_source_sha256": {
+    "evaluate_bigram.py": "f2f176400004195cfd1992a93b59d985abd77148a7f8995a5f80b374c4b6a219",
+    "language_eval.py": "4fa727a1304b28c87a43bb554f82819d9cb99268b5d30eb66ba6425233c835d3"
+  }
+}

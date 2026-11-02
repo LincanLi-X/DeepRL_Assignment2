@@ -1,0 +1,11 @@
+{
+  "all_checks_passed": true,
+  "continuations": 9,
+  "new_characters_each": 128,
+  "fourgram_windows_each": 125,
+  "prompt_excluded_from_metrics": true,
+  "raw_whitespace_preserved": true,
+  "all_nine_rates_independently_verified": true,
+  "all_three_means_verified_with_exact_fractions": true,
+  "frozen_artifacts_and_earlier_report_unchanged": true
+}

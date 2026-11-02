@@ -1,0 +1,12 @@
+Single visible GPU: NVIDIA A100 80GB PCIe; PyTorch 2.11.0+cu128
+MLP epoch 1/5: train CE=0.708334, acc=76.2200%; val CE=0.719584, acc=75.7500%; elapsed=0.418s [best]
+MLP epoch 2/5: train CE=0.591331, acc=80.2400%; val CE=0.604314, acc=78.9000%; elapsed=0.580s [best]
+MLP epoch 3/5: train CE=0.546479, acc=80.5200%; val CE=0.559919, acc=79.5500%; elapsed=0.743s [best]
+MLP epoch 4/5: train CE=0.501532, acc=82.6000%; val CE=0.526761, acc=81.9000%; elapsed=0.913s [best]
+MLP epoch 5/5: train CE=0.469221, acc=83.7000%; val CE=0.496752, acc=82.7000%; elapsed=1.079s [best]
+CNN epoch 1/5: train CE=1.531844, acc=49.0900%; val CE=1.521396, acc=49.1500%; elapsed=0.587s [best]
+CNN epoch 2/5: train CE=1.154477, acc=60.7800%; val CE=1.152507, acc=60.6000%; elapsed=0.877s [best]
+CNN epoch 3/5: train CE=0.962966, acc=64.8100%; val CE=0.967027, acc=64.9000%; elapsed=1.169s [best]
+CNN epoch 4/5: train CE=0.879548, acc=67.9000%; val CE=0.888166, acc=68.3500%; elapsed=1.464s [best]
+CNN epoch 5/5: train CE=0.768438, acc=72.2900%; val CE=0.784496, acc=72.0500%; elapsed=1.757s [best]
+Completed both five-epoch runs. Test split was not loaded or evaluated.

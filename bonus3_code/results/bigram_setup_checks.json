@@ -1,0 +1,61 @@
+{
+  "input_shape": [
+    32,
+    256
+  ],
+  "target_shape": [
+    32,
+    256
+  ],
+  "input_dtype": "torch.int64",
+  "target_dtype": "torch.int64",
+  "logit_shape": [
+    32,
+    256,
+    65
+  ],
+  "logit_dtype": "torch.float32",
+  "parameters": 4225,
+  "batch_targets": 8192,
+  "final_targets_checked": true,
+  "boundary_windows_checked_for_both_splits": true,
+  "same_current_character_same_distribution": true,
+  "loss_matches_all_position_nll": true,
+  "initialization_reproducible": true,
+  "initial_weight_sha256": "63d613d07ae0d176ad986d7d3af2cff7e874361c511f0ab8add4dc871bfe7200",
+  "preview_starts": [
+    354057,
+    828953,
+    99450,
+    786418,
+    262675,
+    152001,
+    680945,
+    384300,
+    746780,
+    363904,
+    499848,
+    992386,
+    2939,
+    773352,
+    225544,
+    548052,
+    131223,
+    768494,
+    325195,
+    797981,
+    91319,
+    192260,
+    717000,
+    83958,
+    194752,
+    829503,
+    165114,
+    513123,
+    814481,
+    762786,
+    973211,
+    412859
+  ],
+  "check_device": "cpu"
+}

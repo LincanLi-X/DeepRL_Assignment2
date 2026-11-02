@@ -1,0 +1,26 @@
+{
+  "all_checks_passed": true,
+  "number_of_rows": 10,
+  "paired_sample_count_per_row": 2000,
+  "mean_shifted_metrics": {
+    "MLP": {
+      "mean_shifted_accuracy": 0.452,
+      "mean_shifted_consistency": 0.47375,
+      "centered_accuracy": 0.827,
+      "minimum_shifted_accuracy": 0.3205,
+      "maximum_shifted_accuracy": 0.595
+    },
+    "CNN": {
+      "mean_shifted_accuracy": 0.69875,
+      "mean_shifted_consistency": 0.857375,
+      "centered_accuracy": 0.725,
+      "minimum_shifted_accuracy": 0.6665,
+      "maximum_shifted_accuracy": 0.7145
+    }
+  },
+  "saved_logits_and_predictions_agree": true,
+  "original_test_indices_and_labels_preserved": true,
+  "all_training_artifacts_unchanged": true,
+  "earlier_report_verified_before_append": true,
+  "changed_prediction_pairs_verified": 2
+}

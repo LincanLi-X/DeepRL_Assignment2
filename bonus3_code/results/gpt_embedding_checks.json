@@ -1,0 +1,14 @@
+{
+  "default_embedding_shape": [
+    2,
+    17,
+    384
+  ],
+  "explicit_position_shape": [
+    2,
+    32,
+    384
+  ],
+  "default_equals_explicit_zero_based_positions": true,
+  "supports_retained_positions_224_through_255": true
+}

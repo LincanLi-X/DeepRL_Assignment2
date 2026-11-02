@@ -1,0 +1,35 @@
+{
+  "seed": 1337,
+  "epochs": 5,
+  "batch_size": 128,
+  "train_examples_per_epoch": 10000,
+  "batches_per_epoch": 79,
+  "last_training_batch_size": 16,
+  "updates_per_model": 395,
+  "same_saved_orders_for_both_models": true,
+  "optimizer": {
+    "name": "Adam",
+    "lr": 0.001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "amsgrad": false
+  },
+  "loss": "CrossEntropyLoss on raw logits and integer labels",
+  "precision": "float32; no autocast; TF32 disabled",
+  "checkpoint_selection": "lowest validation loss; retain earlier epoch on ties",
+  "split_file_sha256": "53682596cad2e51d172b517c235b9db5bd5df9348a99001cf62ad34b3232ccad",
+  "epoch_order_file_sha256": "7ce65dd509f7b74c1b55f0c87780785bc2928667917a0c88eb3f830b366f8dc5",
+  "pretraining_prediction_sha256": "14cb88cb7339b6be5297e67f932228fb327c31d5953f7d24ebfcdeb251a700f8",
+  "epoch_order_tensor_sha256": [
+    "1a9e831dc182744ea9c6c827cbe54700dc05e80682ec3a9c037fdbf9b849393b",
+    "943bb81b3e2543ff36e5049bd82f4e22889e9dd5155c89ad700e9b0ce07b4941",
+    "f9ff8674e8a7bf889c0e7d80372d55a6ebd3f110b6a79d363aa46b18922f7f8d",
+    "e8710252cab5a10bd7061deeec96ae79ed29b9d70584c295d12c74f2528657d9",
+    "d1738adc78470f40a80789e163578db77573857b199517c0273e19b0c2756a16"
+  ],
+  "all_orders_are_valid_permutations": true
+}

@@ -1,0 +1,17 @@
+{
+  "characters": 1115394,
+  "vocabulary_size": 65,
+  "encoding_roundtrip_exact": true,
+  "source_bytes_preserved": true,
+  "source_sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+  "local_copy_sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+  "encoded_tensor_shape": [
+    1115394
+  ],
+  "encoded_dtype": "torch.int64",
+  "whitespace_characters": [
+    "\n",
+    " "
+  ],
+  "earlier_report_sha256": "ce7cf75a36dd02458c861bba2f9f11051b01b07d7bc3141b4680b93f3358db5a"
+}

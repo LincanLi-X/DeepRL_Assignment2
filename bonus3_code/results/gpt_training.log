@@ -1,0 +1,73 @@
+GPU: NVIDIA A100 80GB PCIe; autocast torch.bfloat16; unique parameters 10,745,088; resume update 0.
+Evaluation 0/5000: train CE=4.250291; val CE=4.242345; best=0 (4.242345); evaluation 15.2s; elapsed 15.4s
+Update 100/5000: batch CE=2.477484; lr=0.000990099; skips=0; elapsed=29.1s
+Update 200/5000: batch CE=2.223082; lr=0.000999094; skips=0; elapsed=42.8s
+Evaluation 250/5000: train CE=1.969489; val CE=2.073932; best=250 (2.073932); evaluation 15.4s; elapsed 65.0s
+Update 300/5000: batch CE=1.923624; lr=0.000996342; skips=0; elapsed=71.9s
+Update 400/5000: batch CE=1.745889; lr=0.000991757; skips=0; elapsed=85.5s
+Update 500/5000: batch CE=1.644117; lr=0.000985356; skips=0; elapsed=99.2s
+Evaluation 500/5000: train CE=1.529025; val CE=1.716261; best=500 (1.716261); evaluation 15.5s; elapsed 114.7s
+Update 600/5000: batch CE=1.503269; lr=0.000977166; skips=0; elapsed=128.4s
+Update 700/5000: batch CE=1.471340; lr=0.000967221; skips=0; elapsed=142.0s
+Evaluation 750/5000: train CE=1.362114; val CE=1.578847; best=750 (1.578847); evaluation 15.4s; elapsed 164.2s
+Update 800/5000: batch CE=1.422811; lr=0.000955561; skips=0; elapsed=171.0s
+Update 900/5000: batch CE=1.383847; lr=0.000942235; skips=0; elapsed=184.6s
+Update 1000/5000: batch CE=1.382318; lr=0.000927297; skips=0; elapsed=198.3s
+Evaluation 1000/5000: train CE=1.269362; val CE=1.535476; best=1000 (1.535476); evaluation 15.4s; elapsed 213.7s
+Update 1100/5000: batch CE=1.346974; lr=0.000910809; skips=0; elapsed=227.3s
+Update 1200/5000: batch CE=1.296405; lr=0.000892838; skips=0; elapsed=240.9s
+Evaluation 1250/5000: train CE=1.203470; val CE=1.496802; best=1250 (1.496802); evaluation 15.4s; elapsed 263.1s
+Update 1300/5000: batch CE=1.276409; lr=0.000873458; skips=0; elapsed=269.9s
+Update 1400/5000: batch CE=1.237928; lr=0.000852749; skips=0; elapsed=283.5s
+Update 1500/5000: batch CE=1.216875; lr=0.000830796; skips=0; elapsed=297.1s
+Evaluation 1500/5000: train CE=1.150186; val CE=1.479843; best=1500 (1.479843); evaluation 15.4s; elapsed 312.5s
+Update 1600/5000: batch CE=1.216679; lr=0.000807689; skips=0; elapsed=326.1s
+Update 1700/5000: batch CE=1.188341; lr=0.000783523; skips=0; elapsed=339.7s
+Evaluation 1750/5000: train CE=1.100399; val CE=1.467989; best=1750 (1.467989); evaluation 15.4s; elapsed 362.0s
+Update 1800/5000: batch CE=1.173397; lr=0.000758398; skips=0; elapsed=368.8s
+Update 1900/5000: batch CE=1.163365; lr=0.000732416; skips=0; elapsed=382.4s
+Update 2000/5000: batch CE=1.152436; lr=0.000705685; skips=0; elapsed=396.0s
+Evaluation 2000/5000: train CE=1.053801; val CE=1.477358; best=1750 (1.467989); evaluation 15.2s; elapsed 411.2s
+Update 2100/5000: batch CE=1.127562; lr=0.000678314; skips=0; elapsed=424.8s
+Update 2200/5000: batch CE=1.129121; lr=0.000650416; skips=0; elapsed=438.4s
+Evaluation 2250/5000: train CE=1.009324; val CE=1.478367; best=1750 (1.467989); evaluation 15.2s; elapsed 460.4s
+Update 2300/5000: batch CE=1.112047; lr=0.000622105; skips=0; elapsed=467.2s
+Update 2400/5000: batch CE=1.076933; lr=0.000593498; skips=0; elapsed=480.8s
+Update 2500/5000: batch CE=1.079470; lr=0.000564712; skips=0; elapsed=494.4s
+Evaluation 2500/5000: train CE=0.964021; val CE=1.502342; best=1750 (1.467989); evaluation 15.2s; elapsed 509.6s
+Update 2600/5000: batch CE=1.050994; lr=0.000535865; skips=0; elapsed=523.2s
+Update 2700/5000: batch CE=1.040327; lr=0.000507077; skips=0; elapsed=536.8s
+Evaluation 2750/5000: train CE=0.914207; val CE=1.520404; best=1750 (1.467989); evaluation 15.2s; elapsed 558.8s
+Update 2800/5000: batch CE=0.997767; lr=0.000478465; skips=0; elapsed=565.6s
+Update 2900/5000: batch CE=1.003716; lr=0.000450147; skips=0; elapsed=579.2s
+Update 3000/5000: batch CE=0.980274; lr=0.000422239; skips=0; elapsed=592.9s
+Evaluation 3000/5000: train CE=0.869350; val CE=1.537361; best=1750 (1.467989); evaluation 15.2s; elapsed 608.0s
+Update 3100/5000: batch CE=0.992446; lr=0.000394857; skips=0; elapsed=621.7s
+Update 3200/5000: batch CE=0.967550; lr=0.000368111; skips=0; elapsed=635.3s
+Evaluation 3250/5000: train CE=0.820469; val CE=1.561658; best=1750 (1.467989); evaluation 15.2s; elapsed 657.3s
+Update 3300/5000: batch CE=0.943755; lr=0.000342114; skips=0; elapsed=664.1s
+Update 3400/5000: batch CE=0.944102; lr=0.000316970; skips=0; elapsed=677.7s
+Update 3500/5000: batch CE=0.948917; lr=0.000292784; skips=0; elapsed=691.3s
+Evaluation 3500/5000: train CE=0.779580; val CE=1.581917; best=1750 (1.467989); evaluation 15.2s; elapsed 706.5s
+Update 3600/5000: batch CE=0.908550; lr=0.000269655; skips=0; elapsed=720.1s
+Update 3700/5000: batch CE=0.892279; lr=0.000247678; skips=0; elapsed=733.7s
+Evaluation 3750/5000: train CE=0.743156; val CE=1.608040; best=1750 (1.467989); evaluation 15.2s; elapsed 755.7s
+Update 3800/5000: batch CE=0.879918; lr=0.000226944; skips=0; elapsed=762.5s
+Update 3900/5000: batch CE=0.883176; lr=0.000207536; skips=0; elapsed=776.1s
+Update 4000/5000: batch CE=0.914897; lr=0.000189537; skips=0; elapsed=789.8s
+Evaluation 4000/5000: train CE=0.710110; val CE=1.633213; best=1750 (1.467989); evaluation 15.2s; elapsed 805.0s
+Update 4100/5000: batch CE=0.869474; lr=0.000173018; skips=0; elapsed=818.6s
+Update 4200/5000: batch CE=0.863020; lr=0.000158048; skips=0; elapsed=832.2s
+Evaluation 4250/5000: train CE=0.682535; val CE=1.644366; best=1750 (1.467989); evaluation 15.2s; elapsed 854.2s
+Update 4300/5000: batch CE=0.857350; lr=0.000144689; skips=0; elapsed=861.0s
+Update 4400/5000: batch CE=0.845279; lr=0.000132996; skips=0; elapsed=874.6s
+Update 4500/5000: batch CE=0.850902; lr=0.000123016; skips=0; elapsed=888.3s
+Evaluation 4500/5000: train CE=0.656735; val CE=1.669052; best=1750 (1.467989); evaluation 15.2s; elapsed 903.5s
+Update 4600/5000: batch CE=0.822050; lr=0.000114791; skips=0; elapsed=917.1s
+Update 4700/5000: batch CE=0.833925; lr=0.000108354; skips=0; elapsed=930.8s
+Evaluation 4750/5000: train CE=0.637706; val CE=1.687769; best=1750 (1.467989); evaluation 15.3s; elapsed 952.9s
+Update 4800/5000: batch CE=0.849702; lr=0.000103731; skips=0; elapsed=959.7s
+Update 4900/5000: batch CE=0.854480; lr=0.000100943; skips=0; elapsed=973.3s
+Update 5000/5000: batch CE=0.824879; lr=0.000100000; skips=0; elapsed=987.0s
+Evaluation 5000/5000: train CE=0.622537; val CE=1.703321; best=1750 (1.467989); evaluation 15.2s; elapsed 1002.2s
+Completed all 5,000 iterations and 21 evaluations; selected update 1750, sampled validation CE 1.467989; skipped steps 0.

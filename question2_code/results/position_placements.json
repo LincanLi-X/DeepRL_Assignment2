@@ -1,0 +1,110 @@
+{
+  "test_examples": 2000,
+  "test_index_order_sha256": "f40cee545983feff138f711c8ddb2879a8c31038a836753a20ab10c712dccc05",
+  "split_file_sha256": "53682596cad2e51d172b517c235b9db5bd5df9348a99001cf62ad34b3232ccad",
+  "earlier_report_sha256": "6c3c0016a40d725711f2b7d07b2337c9a947540f93a6642283672b80836f7012",
+  "checkpoint_sha256": {
+    "MLP": "3fbe78b23f896fa0808cf3dd838dccda2b3979d4fc54c519cf9c36dacc68979f",
+    "CNN": "4c8a97e56705d0de0d17c1bb34e9407622ae6af32b6d37bbc94f6e016968bc13"
+  },
+  "selected_epochs": {
+    "MLP": 5,
+    "CNN": 5
+  },
+  "conditions": [
+    {
+      "name": "centered",
+      "delta_row": 0,
+      "delta_column": 0,
+      "canvas_shape": [
+        2000,
+        1,
+        36,
+        36
+      ],
+      "full_originals_preserved": true,
+      "outside_placement_zero": true,
+      "maximum_pixel_sum_difference_all_examples": 0.0,
+      "checked_example_pixel_sum": 371.6000038967468,
+      "checked_example_absolute_sum_difference": 0.0
+    },
+    {
+      "name": "left",
+      "delta_row": 0,
+      "delta_column": -3,
+      "canvas_shape": [
+        2000,
+        1,
+        36,
+        36
+      ],
+      "full_originals_preserved": true,
+      "outside_placement_zero": true,
+      "maximum_pixel_sum_difference_all_examples": 0.0,
+      "checked_example_pixel_sum": 371.6000038967468,
+      "checked_example_absolute_sum_difference": 0.0
+    },
+    {
+      "name": "right",
+      "delta_row": 0,
+      "delta_column": 3,
+      "canvas_shape": [
+        2000,
+        1,
+        36,
+        36
+      ],
+      "full_originals_preserved": true,
+      "outside_placement_zero": true,
+      "maximum_pixel_sum_difference_all_examples": 0.0,
+      "checked_example_pixel_sum": 371.6000038967468,
+      "checked_example_absolute_sum_difference": 0.0
+    },
+    {
+      "name": "up",
+      "delta_row": -3,
+      "delta_column": 0,
+      "canvas_shape": [
+        2000,
+        1,
+        36,
+        36
+      ],
+      "full_originals_preserved": true,
+      "outside_placement_zero": true,
+      "maximum_pixel_sum_difference_all_examples": 0.0,
+      "checked_example_pixel_sum": 371.6000038967468,
+      "checked_example_absolute_sum_difference": 0.0
+    },
+    {
+      "name": "down",
+      "delta_row": 3,
+      "delta_column": 0,
+      "canvas_shape": [
+        2000,
+        1,
+        36,
+        36
+      ],
+      "full_originals_preserved": true,
+      "outside_placement_zero": true,
+      "maximum_pixel_sum_difference_all_examples": 0.0,
+      "checked_example_pixel_sum": 371.6000038967468,
+      "checked_example_absolute_sum_difference": 0.0
+    }
+  ],
+  "visual_inspection_passed": true,
+  "pixel_dtype": "float32",
+  "sum_reduction_dtype": "float64",
+  "checked_example": {
+    "test_position": 0,
+    "official_test_index": 4060,
+    "true_class_id": 0,
+    "true_class_name": "T-shirt/top",
+    "original_scaled_pixel_sum": 371.6000038967468,
+    "maximum_absolute_pixel_sum_difference": 0.0
+  },
+  "visual_check_figure": "results/figures/q2c_placements.png",
+  "visual_check_figure_sha256": "a5cebfc2729cc79e690e1cbec812bb2ebb5034ce4bb6d41567f1eae152667385",
+  "visual_inspection_note": "Inspected all five canvases: the same complete image is centered or moved three pixels in the indicated direction, with no clipping or wrap."
+}

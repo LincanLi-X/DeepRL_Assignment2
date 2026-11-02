@@ -1,0 +1,15 @@
+{
+  "all_checks_passed": true,
+  "training_updates": 500,
+  "training_targets_processed": 4096000,
+  "saved_window_starts_replayed_exactly": true,
+  "full_validation_targets": 111539,
+  "every_validation_target_scored_once": true,
+  "independent_float64_transition_count_ce": 2.5211652502097195,
+  "absolute_ce_difference": 9.01937058372937e-09,
+  "ce_tolerance": 1e-06,
+  "generation_characters": 128,
+  "generated_text_matches_saved_ids": true,
+  "original_report_preserved": true,
+  "checkpoint_and_source_hashes_verified": true
+}

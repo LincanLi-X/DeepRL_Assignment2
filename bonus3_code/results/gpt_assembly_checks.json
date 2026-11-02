@@ -1,0 +1,13 @@
+{
+  "parameters": 10745088,
+  "raw_logit_shape": [
+    1,
+    3,
+    65
+  ],
+  "weight_tensor_shared": true,
+  "all_linear_biases_absent": true,
+  "layernorm_scale_only": true,
+  "dropout_module_count": 19,
+  "independent_block_count": 6
+}

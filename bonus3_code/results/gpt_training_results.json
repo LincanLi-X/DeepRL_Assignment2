@@ -1,0 +1,299 @@
+{
+  "plan": {
+    "model": {
+      "vocabulary_size": 65,
+      "context_length": 256,
+      "width": 384,
+      "heads": 6,
+      "layers": 6,
+      "dropout": 0.2
+    },
+    "updates": 5000,
+    "batch_size": 64,
+    "training_window_seed": 1337,
+    "evaluation_window_seed": 2026,
+    "evaluation_interval": 250,
+    "evaluation_batches_per_split": 200,
+    "evaluation_targets_per_split": 3276800,
+    "gradient_norm_clip": 1.0,
+    "optimizer": {
+      "name": "AdamW",
+      "betas": [
+        0.9,
+        0.99
+      ],
+      "eps": 1e-08,
+      "matrix_weight_decay": 0.1,
+      "layernorm_weight_decay": 0.0
+    },
+    "optimizer_group_checks": {
+      "fused": false,
+      "decay_parameter_tensors": 26,
+      "no_decay_parameter_tensors": 13,
+      "decay_parameter_count": 10740096,
+      "no_decay_parameter_count": 4992,
+      "decay_names": [
+        "embeddings.token.weight",
+        "embeddings.position.weight",
+        "blocks.0.attention.qkv.weight",
+        "blocks.0.attention.projection.weight",
+        "blocks.0.ffn.0.weight",
+        "blocks.0.ffn.2.weight",
+        "blocks.1.attention.qkv.weight",
+        "blocks.1.attention.projection.weight",
+        "blocks.1.ffn.0.weight",
+        "blocks.1.ffn.2.weight",
+        "blocks.2.attention.qkv.weight",
+        "blocks.2.attention.projection.weight",
+        "blocks.2.ffn.0.weight",
+        "blocks.2.ffn.2.weight",
+        "blocks.3.attention.qkv.weight",
+        "blocks.3.attention.projection.weight",
+        "blocks.3.ffn.0.weight",
+        "blocks.3.ffn.2.weight",
+        "blocks.4.attention.qkv.weight",
+        "blocks.4.attention.projection.weight",
+        "blocks.4.ffn.0.weight",
+        "blocks.4.ffn.2.weight",
+        "blocks.5.attention.qkv.weight",
+        "blocks.5.attention.projection.weight",
+        "blocks.5.ffn.0.weight",
+        "blocks.5.ffn.2.weight"
+      ],
+      "no_decay_names": [
+        "blocks.0.norm1.weight",
+        "blocks.0.norm2.weight",
+        "blocks.1.norm1.weight",
+        "blocks.1.norm2.weight",
+        "blocks.2.norm1.weight",
+        "blocks.2.norm2.weight",
+        "blocks.3.norm1.weight",
+        "blocks.3.norm2.weight",
+        "blocks.4.norm1.weight",
+        "blocks.4.norm2.weight",
+        "blocks.5.norm1.weight",
+        "blocks.5.norm2.weight",
+        "final_norm.weight"
+      ],
+      "tied_weight_appears_once": true
+    },
+    "learning_rate_checks": {
+      "0": 9.900990099009901e-06,
+      "99": 0.0009900990099009901,
+      "100": 0.001,
+      "4999": 0.00010000009248900101
+    },
+    "input_sha256": {
+      "data/text_splits.pt": "111b153ac2ca0a667e1b12c7f5fa2d76c827bd64f22e9e2d91facb7b1599a965",
+      "data/vocabulary.json": "f3b19e2c97e7d2e29fe7cc2abbc37709bd5dc1bf557d1add8fc4ba5a1338836b"
+    },
+    "gpt_source_sha256": "8741237f2aac259ae9451f26374f17fdb89b8cf74b697d4ddbfcbb28455c7236",
+    "earlier_report_sha256": "b955a64788c946e353f210df9a73c88f655fe9eae3fd644f52052ee874ec2cff",
+    "bigram_final_sha256": "95b6cbe22fb359a461f7282baf09fa3e1e8e9c20bb5055550a722cf5886d668e",
+    "all_checks_passed": true
+  },
+  "environment": {
+    "gpu_name": "NVIDIA A100 80GB PCIe",
+    "gpu_memory_bytes": 85094825984,
+    "visible_device_count": 1,
+    "cuda_visible_devices": "GPU-8b270cf8-6bb4-cee0-7060-88eba83d2fb0",
+    "torch_version": "2.11.0+cu128",
+    "cuda_runtime": "12.8",
+    "parameter_dtype": "float32",
+    "autocast_dtype": "torch.bfloat16",
+    "grad_scaler_used": false,
+    "tf32": false,
+    "fused_adamw": true,
+    "deterministic_algorithms": true,
+    "hardware_deviation": "one server GPU instead of prescribed free Google Colab GPU"
+  },
+  "completed_iterations": 5000,
+  "optimizer_steps": 5000,
+  "scaler_skipped_steps": 0,
+  "selected_update": 1750,
+  "selected_sampled_validation_ce": 1.467988815542776,
+  "evaluation_history": [
+    {
+      "update": 0,
+      "train_cross_entropy": 4.250290713310242,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 4.242345409393311,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 15.159879609011114
+    },
+    {
+      "update": 250,
+      "train_cross_entropy": 1.9694885263871402,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 2.0739318371145057,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 64.46942350594327
+    },
+    {
+      "update": 500,
+      "train_cross_entropy": 1.5290253323377692,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.7162612142167928,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 114.0858095032163
+    },
+    {
+      "update": 750,
+      "train_cross_entropy": 1.3621140584159002,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.5788473820314175,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 163.63229918014258
+    },
+    {
+      "update": 1000,
+      "train_cross_entropy": 1.2693624018654008,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.5354755306757943,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 213.07123624021187
+    },
+    {
+      "update": 1250,
+      "train_cross_entropy": 1.2034703349903066,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.4968016455188626,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 262.5108632282354
+    },
+    {
+      "update": 1500,
+      "train_cross_entropy": 1.1501856416737064,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.4798427291448024,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 311.93439483921975
+    },
+    {
+      "update": 1750,
+      "train_cross_entropy": 1.1003989687561262,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.467988815542776,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 361.3608754822053
+    },
+    {
+      "update": 2000,
+      "train_cross_entropy": 1.053801269146752,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.4773579420794705,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 410.81171504128724
+    },
+    {
+      "update": 2250,
+      "train_cross_entropy": 1.009323955964537,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.4783672121542986,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 460.01531829405576
+    },
+    {
+      "update": 2500,
+      "train_cross_entropy": 0.9640211909950449,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.5023418502946515,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 509.229790891055
+    },
+    {
+      "update": 2750,
+      "train_cross_entropy": 0.914207205724706,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.5204036097868083,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 558.4436352290213
+    },
+    {
+      "update": 3000,
+      "train_cross_entropy": 0.8693496004730696,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.5373613051027133,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 607.672520162072
+    },
+    {
+      "update": 3250,
+      "train_cross_entropy": 0.8204691577846097,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.5616579433202786,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 656.8872885941528
+    },
+    {
+      "update": 3500,
+      "train_cross_entropy": 0.7795797619133736,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.5819174129963358,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 706.1128385439515
+    },
+    {
+      "update": 3750,
+      "train_cross_entropy": 0.7431557595886624,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.6080402892778147,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 755.3289172481745
+    },
+    {
+      "update": 4000,
+      "train_cross_entropy": 0.7101104406243394,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.633213301687101,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 804.5633357730694
+    },
+    {
+      "update": 4250,
+      "train_cross_entropy": 0.6825348805315662,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.6443661911968228,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 853.7989519578405
+    },
+    {
+      "update": 4500,
+      "train_cross_entropy": 0.656735466812388,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.6690520107410338,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 903.0727697238326
+    },
+    {
+      "update": 4750,
+      "train_cross_entropy": 0.6377064456234802,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.6877690447590794,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 952.4099378599785
+    },
+    {
+      "update": 5000,
+      "train_cross_entropy": 0.622537388789533,
+      "train_targets": 3276800,
+      "validation_cross_entropy": 1.703320551647921,
+      "validation_targets": 3276800,
+      "elapsed_seconds": 1001.7941278568469
+    }
+  ],
+  "elapsed_seconds": 1002.236221482046,
+  "peak_allocated_gpu_bytes": 2815519232,
+  "source_sha256": {
+    "train_gpt.py": "d7201ffc16d6e27f8a8b08bb48ac3103b79c33e465334bbde9e6d6eeb52cc2ff",
+    "gpt.py": "8741237f2aac259ae9451f26374f17fdb89b8cf74b697d4ddbfcbb28455c7236",
+    "gpt_optimization.py": "66b1977469142d90dee33c4abac8b5cff3a57e6b08770770bf7fde967bea1433",
+    "gpt_evaluation.py": "8661ce612a0e3dae15c29dd876a09bff4673cfa96baf1af3553e8300e1e47de6",
+    "text_data.py": "855b00e13da210e218b0d217dcc1ae41c35c3c5d414a4e1fb785cd9d43ea18b0",
+    "losses.py": "f090065bd6da89af0f85bc5c4b9e7c09a4de98606dfe2e5547d806b33e162cb3",
+    "runtime.py": "4c661c481664f9c5da2336087083fc0f6542310f27b491c6096b3f6a0604e316",
+    "paths.py": "4aab54ab653a5f97c9e745df6785fa774b6eeb2c8280be0f86afe3bfbcf1ff0a"
+  },
+  "best_checkpoint_sha256": "80a21e79c6e03fbd8e82aac5e8e9e75476697f6d072f4535bd0e68a55601cb9e",
+  "latest_checkpoint_sha256": "dc1221c6a8c5df8e268591c7639a99d18650fce25fa00214213a1cdf88fcf4c9"
+}

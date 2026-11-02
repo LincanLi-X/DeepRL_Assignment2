@@ -1,0 +1,42 @@
+{
+  "selected_update": 1750,
+  "selected_checkpoint_sha256": "80a21e79c6e03fbd8e82aac5e8e9e75476697f6d072f4535bd0e68a55601cb9e",
+  "context_seed": 2027,
+  "context_lengths": [
+    32,
+    128,
+    256
+  ],
+  "context_targets": 512,
+  "context_target_file_sha256": "1d16c7c1d4c19d64e58a41b94d5a84a2235a6e4ebb5f0fbc512300afaf1be2c6",
+  "temperatures": [
+    0.7,
+    1.0,
+    1.3
+  ],
+  "generation_seeds": [
+    1,
+    2,
+    3
+  ],
+  "prompt": "ROMEO:\n",
+  "new_characters": 128,
+  "autocast_dtype": "torch.bfloat16",
+  "full_validation_reference_perplexity": 4.344307027015568,
+  "earlier_report_sha256": "e31807ba62f091a8474d3d009a0eb37ea8dda80a552b2c3bd188b958d7fe98f8",
+  "protected_artifact_sha256": {
+    "checkpoints/bigram_final.pt": "95b6cbe22fb359a461f7282baf09fa3e1e8e9c20bb5055550a722cf5886d668e",
+    "checkpoints/bigram_latest.pt": "f9fd6dafa1c9135b9a0b5521010d4e407401e7e8240df47bef0d194dbe2dee01",
+    "checkpoints/gpt_best.pt": "80a21e79c6e03fbd8e82aac5e8e9e75476697f6d072f4535bd0e68a55601cb9e",
+    "checkpoints/gpt_latest.pt": "dc1221c6a8c5df8e268591c7639a99d18650fce25fa00214213a1cdf88fcf4c9",
+    "data/text_splits.pt": "111b153ac2ca0a667e1b12c7f5fa2d76c827bd64f22e9e2d91facb7b1599a965",
+    "data/vocabulary.json": "f3b19e2c97e7d2e29fe7cc2abbc37709bd5dc1bf557d1add8fc4ba5a1338836b",
+    "shakespeare.txt": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+    "gpt.py": "8741237f2aac259ae9451f26374f17fdb89b8cf74b697d4ddbfcbb28455c7236",
+    "language_eval.py": "4fa727a1304b28c87a43bb554f82819d9cb99268b5d30eb66ba6425233c835d3",
+    "text_data.py": "855b00e13da210e218b0d217dcc1ae41c35c3c5d414a4e1fb785cd9d43ea18b0",
+    "results/gpt_results.json": "ead223841b83acf97e642147652ef0cc189e0a5a04930a132de53d3fb4284d61",
+    "results/gpt_training_results.json": "f33b092a15787b1405886da234e132999f5c4f577856959f6e70a8a2fee1ce75",
+    "results/bigram_results.json": "e9e78019c3cb93a3543073805087c300d4d6c1740965bb4b3cef5862566520e4"
+  }
+}

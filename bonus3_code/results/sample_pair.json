@@ -1,0 +1,9 @@
+{
+  "split": "train",
+  "start": 354057,
+  "length": 256,
+  "input_text": "\nNot Gloucester's death, nor Hereford's banishment\nNot Gaunt's rebukes, nor England's private wrongs,\nNor the prevention of poor Bolingbroke\nAbout his marriage, nor my own disgrace,\nHave ever made me sour my patient cheek,\nOr bend one wrinkle on my soverei",
+  "target_text": "Not Gloucester's death, nor Hereford's banishment\nNot Gaunt's rebukes, nor England's private wrongs,\nNor the prevention of poor Bolingbroke\nAbout his marriage, nor my own disgrace,\nHave ever made me sour my patient cheek,\nOr bend one wrinkle on my sovereig",
+  "final_target_split_index": 354313,
+  "final_target_character": "g"
+}

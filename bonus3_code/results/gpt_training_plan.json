@@ -1,0 +1,93 @@
+{
+  "model": {
+    "vocabulary_size": 65,
+    "context_length": 256,
+    "width": 384,
+    "heads": 6,
+    "layers": 6,
+    "dropout": 0.2
+  },
+  "updates": 5000,
+  "batch_size": 64,
+  "training_window_seed": 1337,
+  "evaluation_window_seed": 2026,
+  "evaluation_interval": 250,
+  "evaluation_batches_per_split": 200,
+  "evaluation_targets_per_split": 3276800,
+  "gradient_norm_clip": 1.0,
+  "optimizer": {
+    "name": "AdamW",
+    "betas": [
+      0.9,
+      0.99
+    ],
+    "eps": 1e-08,
+    "matrix_weight_decay": 0.1,
+    "layernorm_weight_decay": 0.0
+  },
+  "optimizer_group_checks": {
+    "fused": false,
+    "decay_parameter_tensors": 26,
+    "no_decay_parameter_tensors": 13,
+    "decay_parameter_count": 10740096,
+    "no_decay_parameter_count": 4992,
+    "decay_names": [
+      "embeddings.token.weight",
+      "embeddings.position.weight",
+      "blocks.0.attention.qkv.weight",
+      "blocks.0.attention.projection.weight",
+      "blocks.0.ffn.0.weight",
+      "blocks.0.ffn.2.weight",
+      "blocks.1.attention.qkv.weight",
+      "blocks.1.attention.projection.weight",
+      "blocks.1.ffn.0.weight",
+      "blocks.1.ffn.2.weight",
+      "blocks.2.attention.qkv.weight",
+      "blocks.2.attention.projection.weight",
+      "blocks.2.ffn.0.weight",
+      "blocks.2.ffn.2.weight",
+      "blocks.3.attention.qkv.weight",
+      "blocks.3.attention.projection.weight",
+      "blocks.3.ffn.0.weight",
+      "blocks.3.ffn.2.weight",
+      "blocks.4.attention.qkv.weight",
+      "blocks.4.attention.projection.weight",
+      "blocks.4.ffn.0.weight",
+      "blocks.4.ffn.2.weight",
+      "blocks.5.attention.qkv.weight",
+      "blocks.5.attention.projection.weight",
+      "blocks.5.ffn.0.weight",
+      "blocks.5.ffn.2.weight"
+    ],
+    "no_decay_names": [
+      "blocks.0.norm1.weight",
+      "blocks.0.norm2.weight",
+      "blocks.1.norm1.weight",
+      "blocks.1.norm2.weight",
+      "blocks.2.norm1.weight",
+      "blocks.2.norm2.weight",
+      "blocks.3.norm1.weight",
+      "blocks.3.norm2.weight",
+      "blocks.4.norm1.weight",
+      "blocks.4.norm2.weight",
+      "blocks.5.norm1.weight",
+      "blocks.5.norm2.weight",
+      "final_norm.weight"
+    ],
+    "tied_weight_appears_once": true
+  },
+  "learning_rate_checks": {
+    "0": 9.900990099009901e-06,
+    "99": 0.0009900990099009901,
+    "100": 0.001,
+    "4999": 0.00010000009248900101
+  },
+  "input_sha256": {
+    "data/text_splits.pt": "111b153ac2ca0a667e1b12c7f5fa2d76c827bd64f22e9e2d91facb7b1599a965",
+    "data/vocabulary.json": "f3b19e2c97e7d2e29fe7cc2abbc37709bd5dc1bf557d1add8fc4ba5a1338836b"
+  },
+  "gpt_source_sha256": "8741237f2aac259ae9451f26374f17fdb89b8cf74b697d4ddbfcbb28455c7236",
+  "earlier_report_sha256": "b955a64788c946e353f210df9a73c88f655fe9eae3fd644f52052ee874ec2cff",
+  "bigram_final_sha256": "95b6cbe22fb359a461f7282baf09fa3e1e8e9c20bb5055550a722cf5886d668e",
+  "all_checks_passed": true
+}

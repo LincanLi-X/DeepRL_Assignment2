@@ -1,0 +1,13 @@
+{
+  "all_checks_passed": true,
+  "training_iterations": 5000,
+  "evaluations": 21,
+  "selected_update": 1750,
+  "full_validation_targets": 111539,
+  "full_validation_ce": 1.468866258544615,
+  "perplexity": 4.344307027015568,
+  "generation_interface_verified": true,
+  "report_metrics_and_image_links_verified": true,
+  "earlier_report_and_bigram_unchanged": true,
+  "figure_sha256": "b2012898a86e329401b3e4b0d8fe15247d8e290a632ad90990dd9fe6ad4d4331"
+}

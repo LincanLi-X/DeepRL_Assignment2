@@ -1,0 +1,46 @@
+{
+  "all_checks_passed": true,
+  "test_split_evaluated": false,
+  "models": {
+    "MLP": {
+      "completed_epochs": 5,
+      "completed_updates": 395,
+      "shared_orders_verified": true,
+      "selection_verified": true,
+      "optimizer_and_rng_states_loadable": true,
+      "reloaded_best_checkpoint_metrics": {
+        "train": {
+          "loss": 0.46922061692476275,
+          "accuracy": 0.837,
+          "examples": 10000
+        },
+        "validation": {
+          "loss": 0.496752219080925,
+          "accuracy": 0.827,
+          "examples": 2000
+        }
+      },
+      "elapsed_seconds": 1.0790787413716316
+    },
+    "CNN": {
+      "completed_epochs": 5,
+      "completed_updates": 395,
+      "shared_orders_verified": true,
+      "selection_verified": true,
+      "optimizer_and_rng_states_loadable": true,
+      "reloaded_best_checkpoint_metrics": {
+        "train": {
+          "loss": 0.7684379279613495,
+          "accuracy": 0.7229,
+          "examples": 10000
+        },
+        "validation": {
+          "loss": 0.7844957258701325,
+          "accuracy": 0.7205,
+          "examples": 2000
+        }
+      },
+      "elapsed_seconds": 1.7568118921481073
+    }
+  }
+}

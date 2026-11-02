@@ -1,0 +1,54 @@
+{
+  "config": {
+    "seed": 1337,
+    "updates": 500,
+    "batch_size": 32,
+    "context_length": 256,
+    "vocabulary_size": 65,
+    "optimizer": "Adam",
+    "learning_rate": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epsilon": 1e-08,
+    "weight_decay": 0,
+    "initial_weight_std": 0.02,
+    "precision": "float32",
+    "selection": "final update; no validation-based checkpoint selection"
+  },
+  "environment": {
+    "gpu_name": "NVIDIA A100 80GB PCIe",
+    "visible_device_count": 1,
+    "cuda_visible_devices": "GPU-8b270cf8-6bb4-cee0-7060-88eba83d2fb0",
+    "torch_version": "2.11.0+cu128",
+    "cuda_runtime": "12.8",
+    "precision": "float32",
+    "autocast": false,
+    "tf32": false,
+    "deterministic_algorithms": true,
+    "allocation": "one idle server GPU selected by UUID; no job scheduler discovered",
+    "deviation": "server GPU instead of the prescribed free Google Colab GPU"
+  },
+  "completed_updates": 500,
+  "parameters": 4225,
+  "training_targets_processed": 4096000,
+  "initial_weight_sha256": "63d613d07ae0d176ad986d7d3af2cff7e874361c511f0ab8add4dc871bfe7200",
+  "input_sha256": {
+    "shakespeare.txt": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+    "data/text_splits.pt": "111b153ac2ca0a667e1b12c7f5fa2d76c827bd64f22e9e2d91facb7b1599a965",
+    "data/vocabulary.json": "f3b19e2c97e7d2e29fe7cc2abbc37709bd5dc1bf557d1add8fc4ba5a1338836b"
+  },
+  "source_sha256": {
+    "train_bigram.py": "e5a140390caa4a1c3298af9aa6ed2be4853dfe5e0bd44412b7bbbc5c4a2f1fab",
+    "bigram.py": "5456c5c29ebd649cf39800bf93b49647b21affd2fb377ad9588cd4a1432fba62",
+    "text_data.py": "855b00e13da210e218b0d217dcc1ae41c35c3c5d414a4e1fb785cd9d43ea18b0",
+    "losses.py": "f090065bd6da89af0f85bc5c4b9e7c09a4de98606dfe2e5547d806b33e162cb3",
+    "runtime.py": "4c661c481664f9c5da2336087083fc0f6542310f27b491c6096b3f6a0604e316",
+    "paths.py": "4aab54ab653a5f97c9e745df6785fa774b6eeb2c8280be0f86afe3bfbcf1ff0a"
+  },
+  "elapsed_seconds": 0.7262245882302523,
+  "final_checkpoint": "checkpoints/bigram_final.pt",
+  "final_checkpoint_sha256": "95b6cbe22fb359a461f7282baf09fa3e1e8e9c20bb5055550a722cf5886d668e",
+  "training_starts_sha256": "f2681ca175c6d2a1d60d7d463780843fb16a68ce94b0326c39a4b458f8c5ce7d"
+}

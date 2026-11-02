@@ -1,0 +1,51 @@
+{
+  "selected_update": 1750,
+  "selected_checkpoint_sha256": "80a21e79c6e03fbd8e82aac5e8e9e75476697f6d072f4535bd0e68a55601cb9e",
+  "seed": 2027,
+  "target_count": 512,
+  "rows": [
+    {
+      "context_length": 32,
+      "first_position_id": 224,
+      "last_position_id": 255,
+      "targets": 512,
+      "cross_entropy": 1.6993778020918562,
+      "fresh_forward_batches": 16,
+      "explicit_positions_observed": true,
+      "loss_dtype": "torch.float32"
+    },
+    {
+      "context_length": 128,
+      "first_position_id": 128,
+      "last_position_id": 255,
+      "targets": 512,
+      "cross_entropy": 1.5667997888156382,
+      "fresh_forward_batches": 16,
+      "explicit_positions_observed": true,
+      "loss_dtype": "torch.float32"
+    },
+    {
+      "context_length": 256,
+      "first_position_id": 0,
+      "last_position_id": 255,
+      "targets": 512,
+      "cross_entropy": 1.457958561651802,
+      "fresh_forward_batches": 16,
+      "explicit_positions_observed": true,
+      "loss_dtype": "torch.float32"
+    }
+  ],
+  "monotonically_nonincreasing": true,
+  "autocast_dtype": "torch.bfloat16",
+  "gpu_name": "NVIDIA A100 80GB PCIe",
+  "loss_precision": "float32 logits for CE; float64 mean over 512 target losses",
+  "visible_device_count": 1,
+  "inference_only": true,
+  "frozen_artifacts_unchanged": true,
+  "inference_file_sha256": "46d7cb5e6b8c2ea2580353705a2647ed4d1ee6ca5506bfc564cce71cf075ba28",
+  "source_sha256": {
+    "context_experiment.py": "c6f4edfc4130448a7aff1780ca39f050de246a3090adb9fcd2333fc322df4cef",
+    "part_c_common.py": "094e38ed39f2d30c1e36f56c884e3b6bd567ae4ba36a22137ba8ff55626ee2c0",
+    "gpt.py": "8741237f2aac259ae9451f26374f17fdb89b8cf74b697d4ddbfcbb28455c7236"
+  }
+}

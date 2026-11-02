@@ -1,0 +1,4 @@
+
+# GPT checkpoints are distributed through Google Drive.
+/bonus3_code/checkpoints/gpt_best.pt
+/bonus3_code/checkpoints/gpt_latest.pt

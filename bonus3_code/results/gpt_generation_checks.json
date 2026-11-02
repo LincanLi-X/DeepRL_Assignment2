@@ -1,0 +1,51 @@
+{
+  "all_checks_passed": true,
+  "records": {
+    "short_prompt": {
+      "prompt_characters": 7,
+      "new_characters": 16,
+      "forward_lengths": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "ordinary_positions_reset_each_forward": true,
+      "each_input_is_last_256_of_actual_prefix": true,
+      "seed": 1337,
+      "temperature": 1.0,
+      "continuation": "Canst her deed, "
+    },
+    "long_prompt": {
+      "prompt_characters": 280,
+      "new_characters": 2,
+      "forward_lengths": [
+        256,
+        256
+      ],
+      "ordinary_positions_reset_each_forward": true,
+      "each_input_is_last_256_of_actual_prefix": true,
+      "seed": 1337,
+      "temperature": 1.0,
+      "continuation": "Ca"
+    }
+  },
+  "autocast_dtype": "torch.bfloat16",
+  "dropout_off": true,
+  "selected_checkpoint_sha256": "80a21e79c6e03fbd8e82aac5e8e9e75476697f6d072f4535bd0e68a55601cb9e",
+  "parameters_and_checkpoint_unchanged": true,
+  "dedicated_generator_device": "cpu",
+  "no_top_k_or_top_p": true
+}

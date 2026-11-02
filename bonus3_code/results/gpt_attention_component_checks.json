@@ -1,0 +1,15 @@
+{
+  "output_shape": [
+    2,
+    17,
+    384
+  ],
+  "attention_shape": [
+    2,
+    6,
+    17,
+    17
+  ],
+  "maximum_row_sum_error": 1.7881393432617188e-07,
+  "maximum_future_weight": 0.0
+}

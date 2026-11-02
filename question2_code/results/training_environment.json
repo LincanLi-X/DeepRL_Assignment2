@@ -1,0 +1,25 @@
+{
+  "gpu_name": "NVIDIA A100 80GB PCIe",
+  "gpu_memory_bytes": 85094825984,
+  "visible_device_count": 1,
+  "cuda_visible_devices": "GPU-8b270cf8-6bb4-cee0-7060-88eba83d2fb0",
+  "process_id": 130370,
+  "torch_version": "2.11.0+cu128",
+  "torchvision_version": "0.26.0+cu128",
+  "cuda_runtime": "12.8",
+  "cudnn_version": 91900,
+  "precision": "float32",
+  "autocast": false,
+  "tf32": false,
+  "deterministic_algorithms": true,
+  "cpu_threads": 4,
+  "allocation": "one server GPU directly selected by UUID; no job scheduler available",
+  "deviation": "server GPU used instead of the prescribed free Google Colab GPU",
+  "timing": "synchronized training start through final epoch-end evaluation; includes intermediate checkpoint writes; excludes data preparation, model/optimizer construction, plotting, and final checkpoint writes",
+  "source_sha256": {
+    "train.py": "28aadb17f17d2ff3dcea438cce1536aa5c72f738d4f66b3b324d3ac417b259b6",
+    "models.py": "1fa38484b1d22a6ca906e7d8d03403d54b6bcb43423afa381cd1025f1343538d",
+    "data.py": "36feaa17b381cfff4d07b7a7bb15830aee57161aea22442111e5f62df7d6142f",
+    "prepare_training.py": "100e228bb4c4aa19b9e07e81579c8cfbc17843d8e1ba2d22c87cd7ec5721797b"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "test_examples": 2000,
+  "test_index_order_sha256": "f40cee545983feff138f711c8ddb2879a8c31038a836753a20ab10c712dccc05",
+  "environment": {
+    "gpu_name": "NVIDIA A100 80GB PCIe",
+    "visible_device_count": 1,
+    "cuda_visible_devices": "GPU-8b270cf8-6bb4-cee0-7060-88eba83d2fb0",
+    "torch_version": "2.11.0+cu128",
+    "precision": "float32",
+    "autocast": false,
+    "tf32": false
+  },
+  "models": {
+    "MLP": {
+      "selected_epoch": 5,
+      "selection_validation_loss": 0.496752219080925,
+      "checkpoint_path": "checkpoints/mlp_best.pt",
+      "checkpoint_sha256": "3fbe78b23f896fa0808cf3dd838dccda2b3979d4fc54c519cf9c36dacc68979f"
+    },
+    "CNN": {
+      "selected_epoch": 5,
+      "selection_validation_loss": 0.7844957258701325,
+      "checkpoint_path": "checkpoints/cnn_best.pt",
+      "checkpoint_sha256": "4c8a97e56705d0de0d17c1bb34e9407622ae6af32b6d37bbc94f6e016968bc13"
+    }
+  },
+  "rows": [
+    {
+      "model": "MLP",
+      "condition": "centered",
+      "delta_row": 0,
+      "delta_column": 0,
+      "examples": 2000,
+      "correct": 1654,
+      "consistent_with_centered": 2000,
+      "prediction_changes": 0,
+      "consistent_but_incorrect": 346,
+      "accuracy": 0.827,
+      "consistency": 1.0
+    },
+    {
+      "model": "MLP",
+      "condition": "left",
+      "delta_row": 0,
+      "delta_column": -3,
+      "examples": 2000,
+      "correct": 674,
+      "consistent_with_centered": 717,
+      "prediction_changes": 1283,
+      "consistent_but_incorrect": 127,
+      "accuracy": 0.337,
+      "consistency": 0.3585
+    },
+    {
+      "model": "MLP",
+      "condition": "right",
+      "delta_row": 0,
+      "delta_column": 3,
+      "examples": 2000,
+      "correct": 641,
+      "consistent_with_centered": 659,
+      "prediction_changes": 1341,
+      "consistent_but_incorrect": 65,
+      "accuracy": 0.3205,
+      "consistency": 0.3295
+    },
+    {
+      "model": "MLP",
+      "condition": "up",
+      "delta_row": -3,
+      "delta_column": 0,
+      "examples": 2000,
+      "correct": 1111,
+      "consistent_with_centered": 1170,
+      "prediction_changes": 830,
+      "consistent_but_incorrect": 147,
+      "accuracy": 0.5555,
+      "consistency": 0.585
+    },
+    {
+      "model": "MLP",
+      "condition": "down",
+      "delta_row": 3,
+      "delta_column": 0,
+      "examples": 2000,
+      "correct": 1190,
+      "consistent_with_centered": 1244,
+      "prediction_changes": 756,
+      "consistent_but_incorrect": 129,
+      "accuracy": 0.595,
+      "consistency": 0.622
+    },
+    {
+      "model": "CNN",
+      "condition": "centered",
+      "delta_row": 0,
+      "delta_column": 0,
+      "examples": 2000,
+      "correct": 1450,
+      "consistent_with_centered": 2000,
+      "prediction_changes": 0,
+      "consistent_but_incorrect": 550,
+      "accuracy": 0.725,
+      "consistency": 1.0
+    },
+    {
+      "model": "CNN",
+      "condition": "left",
+      "delta_row": 0,
+      "delta_column": -3,
+      "examples": 2000,
+      "correct": 1333,
+      "consistent_with_centered": 1599,
+      "prediction_changes": 401,
+      "consistent_but_incorrect": 353,
+      "accuracy": 0.6665,
+      "consistency": 0.7995
+    },
+    {
+      "model": "CNN",
+      "condition": "right",
+      "delta_row": 0,
+      "delta_column": 3,
+      "examples": 2000,
+      "correct": 1427,
+      "consistent_with_centered": 1702,
+      "prediction_changes": 298,
+      "consistent_but_incorrect": 372,
+      "accuracy": 0.7135,
+      "consistency": 0.851
+    },
+    {
+      "model": "CNN",
+      "condition": "up",
+      "delta_row": -3,
+      "delta_column": 0,
+      "examples": 2000,
+      "correct": 1429,
+      "consistent_with_centered": 1843,
+      "prediction_changes": 157,
+      "consistent_but_incorrect": 459,
+      "accuracy": 0.7145,
+      "consistency": 0.9215
+    },
+    {
+      "model": "CNN",
+      "condition": "down",
+      "delta_row": 3,
+      "delta_column": 0,
+      "examples": 2000,
+      "correct": 1401,
+      "consistent_with_centered": 1715,
+      "prediction_changes": 285,
+      "consistent_but_incorrect": 392,
+      "accuracy": 0.7005,
+      "consistency": 0.8575
+    }
+  ],
+  "all_training_artifacts_unchanged": true,
+  "protected_training_artifact_sha256": {
+    "checkpoints/cnn_best.pt": "4c8a97e56705d0de0d17c1bb34e9407622ae6af32b6d37bbc94f6e016968bc13",
+    "checkpoints/cnn_latest.pt": "6b5b76931571025bced5719ec7b2235c9920f60f91e271fa2eaa45c9411e5e6b",
+    "checkpoints/mlp_best.pt": "3fbe78b23f896fa0808cf3dd838dccda2b3979d4fc54c519cf9c36dacc68979f",
+    "checkpoints/mlp_latest.pt": "ec91139d907f0e6f0638872e0dd418e91b43b7625093ca7bac44e47ed28657ce",
+    "splits/fashion_mnist_indices.pt": "53682596cad2e51d172b517c235b9db5bd5df9348a99001cf62ad34b3232ccad",
+    "results/pretraining_prediction.md": "14cb88cb7339b6be5297e67f932228fb327c31d5953f7d24ebfcdeb251a700f8",
+    "results/training_results.json": "0a520437906f2a47aa5175f0ceaa39c6273ee0f77c89914b93cf4400140132a1"
+  },
+  "source_sha256": {
+    "evaluate_position.py": "4bde1ddc4ed15f92f7633e3360226fc4ef8dbe37851350859f8334c57fd803af",
+    "spatial_data.py": "fa14a6ac54c94a9a7bb5dd891eb335375b4a4648fb4286160e08848b42d7c8b3",
+    "models.py": "1fa38484b1d22a6ca906e7d8d03403d54b6bcb43423afa381cd1025f1343538d"
+  },
+  "predictions_sha256": "1370bceceadbd688caa4b867da1b98336c1a08d58cce6a97c9094042a41cb9b9"
+}

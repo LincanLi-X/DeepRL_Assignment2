@@ -1,0 +1,28 @@
+{
+  "parameters": 10745088,
+  "selected_update": 1750,
+  "selected_sampled_validation_ce": 1.467988815542776,
+  "full_validation": {
+    "cross_entropy": 1.468866258544615,
+    "perplexity": 4.344307027015568,
+    "total_negative_log_likelihood": 163835.87361180782,
+    "targets": 111539,
+    "full_chunks": 435,
+    "last_chunk_length": 179,
+    "chunk_count": 436,
+    "all_targets_scored_once": true
+  },
+  "same_targets_and_chunks_as_bigram": true,
+  "autocast_dtype": "torch.bfloat16",
+  "scaler_skipped_steps": 0,
+  "selected_checkpoint_sha256": "80a21e79c6e03fbd8e82aac5e8e9e75476697f6d072f4535bd0e68a55601cb9e",
+  "bigram_reference": {
+    "parameters": 4225,
+    "cross_entropy": 2.521165241190349,
+    "perplexity": 12.443087417320134
+  },
+  "evaluation_source_sha256": {
+    "evaluate_gpt.py": "d603dd709fb7d1ab8323ef8d3102b99d830670fdc1240c6ef1cf223dc8517634",
+    "language_eval.py": "4fa727a1304b28c87a43bb554f82819d9cb99268b5d30eb66ba6425233c835d3"
+  }
+}
